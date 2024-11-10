@@ -33,7 +33,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename='/law-aware'>
+    <Router basename='/law-aware-hackcbs'>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

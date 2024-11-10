@@ -10,8 +10,7 @@ import ladyImage from "../assets/images/lady.png";
 import heroBackground from "../assets/images/hero-background.png";
 import ParticleBackground from "../components/ParticleBackground.js";
 import { motion, AnimatePresence } from 'framer-motion';
-import {useState, useEffect} from 'react';
-
+import { useState, useEffect } from 'react';
 
 const facts = [
   "Did you know? The right to freedom of speech is a fundamental right.",
@@ -32,7 +31,7 @@ const FactsSlider = ({ facts }) => {
   }, [facts.length]);
 
   return (
-    <div className="bg-gradient-to-r from-[#01161B] to-[#022a33] text-white p-2">
+    <div className="bg-[#f9f9f9] text-[#03254e] p-4 my-8"> {/* Updated background and text colors */}
       <AnimatePresence mode="wait">
         <motion.div
           key={currentFactIndex}
@@ -50,27 +49,13 @@ const FactsSlider = ({ facts }) => {
   );
 };
 
-
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-[#ffffff] text-[#03254e]">
       {/* Hero Section */}
       <section className="h-screen relative flex items-center justify-center gradient-bg">
-        
-        {/* Background Image with Blur */}
-        {/* <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${heroBackground})`,
-            filter: 'blur(3px)',
-            zIndex: 0, // Place it behind other content
-          }}
-        ></div> */}
         <ParticleBackground />
-
-        {/* Foreground Content */}
         <div className="container relative z-10 mx-auto flex md:flex-row items-center justify-between px-4 h-full">
-          {/* Left Column with Text and Button */}
           <div className="flex flex-col w-1/2 items-start justify-center p-8">
             <h2 className="text-[6vw] font-bold mb-2 text-left text-[#03254e]">
               Your Rights
@@ -92,11 +77,9 @@ const HomePage = () => {
               </div>
             </Link>
           </div>
-
-          {/* Right Column with Image */}
           <div className="flex w-1/2 justify-end p-8">
             <div className="flex items-start">
-              <img src={ladyImage} alt="Illustration of a lady" className="h-screen pt-12" />
+              <img src={ladyImage} alt="Illustration of a lady" className="h-screen pt-16" />
             </div>
           </div>
         </div>
@@ -107,12 +90,12 @@ const HomePage = () => {
         <PreambleSection />
       </section>
 
-      <section className="bg-[#ffffff]">
-      <NewsSection />
+      <section className="bg-[#ffffff] pb-12"> {/* Added padding-bottom */}
+        <NewsSection />
       </section>
 
       <section>
-      <FactsSlider facts={facts} />
+        <FactsSlider facts={facts} />
       </section>
 
       <section className="bg-[#ffffff]">
