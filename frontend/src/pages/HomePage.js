@@ -98,12 +98,12 @@ const HomePage = () => {
                 Your Power
               </h2>
               <p className="text-[2vw] mb-6 text-left text-[#545677] poppins-regular">
-                <span className="opacity-50">An</span> One-Stop Learning Solution{" "}
+                <span className="opacity-50">A</span> One-Stop Learning Solution{" "}
                 <span className="opacity-50">about<br /> the </span>
                 Laws and Rights <span className="opacity-50">that protect you.</span>
               </p>
               <Link
-                to="/children"
+                to="/learning"
                 className="inline-block px-[2vw] py-[1vw] rounded-lg font-semibold bg-[#69b578] text-[#ffffff] hover:bg-[#03254e] w-3/4"
               >
                 <div className="text-center text-2xl poppins-light">

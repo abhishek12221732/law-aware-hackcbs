@@ -1,68 +1,181 @@
+/**
+ * Main server configuration file
+ * Sets up Express server with MongoDB connection, middleware, and routes
+ * Implements error handling and CORS configuration
+ */
+
+// Import required dependencies
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
+import path from 'path';
+import cors from 'cors';
+
+// Import route handlers
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
 import newsRoutes from './routes/news.route.js';
 import quizRoutes from './routes/quiz.route.js';
 import articleRoutes from './routes/article.route.js';
 import chatRoute from './routes/chat.route.js';
-import cookieParser from 'cookie-parser';
-import bodyParser from 'body-parser';
-import path from 'path';
-import cors from 'cors';
 
+// Load environment variables
 dotenv.config();
-await mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
-    console.log('MongoDb is connected');
-  })
-  .catch((err) => {
-    console.log(err);
-  });
 
- const F_PORT = process.env.F_PORT || 3000;
- 
+/**
+ * Database Configuration
+ * Establishes connection to MongoDB using environment variables
+ * Implements error handling for connection failures
+ */
+class DatabaseConnection {
+  static async initialize() {
+    try {
+      await mongoose.connect(process.env.MONGO_URI, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      });
+      console.log('✅ MongoDB connection established successfully');
+    } catch (error) {
+      console.error('❌ MongoDB connection error:', error.message);
+      console.error('Please check your connection settings and ensure MongoDB is running.');
+      process.exit(1); // Exit process with failure
+    }
+  }
+}
 
-const __dirname = path.resolve();
+/**
+ * Server Configuration
+ * Sets up Express application with necessary middleware and routes
+ */
+class Server {
+  constructor() {
+    this.app = express();
+    this.frontendPort = process.env.F_PORT || 3000;
+    this.serverPort = process.env.PORT || 3000;
+    this.dirname = path.resolve();
+    
+    this.setupMiddleware();
+    this.setupRoutes();
+    this.setupErrorHandling();
+  }
 
-const app = express();
+  /**
+   * Configure and apply middleware
+   */
+  setupMiddleware() {
+    // Configure CORS
+    const corsOptions = {
+      origin: `http://localhost:${this.frontendPort}`,
+      credentials: true,
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      allowedHeaders: ['Content-Type', 'Authorization']
+    };
+    this.app.use(cors(corsOptions));
 
-app.use(cors({
-  origin: `http://localhost:${F_PORT}`, 
-  credentials: true,  
-}));
+    // Parse cookies and JSON bodies
+    this.app.use(cookieParser());
+    this.app.use(bodyParser.json({
+      limit: '50mb'
+    }));
+    this.app.use(bodyParser.urlencoded({
+      extended: true,
+      limit: '50mb'
+    }));
+  }
 
+  /**
+   * Set up API routes
+   */
+  setupRoutes() {
+    // API Routes
+    this.app.use('/api/user', userRoutes);
+    this.app.use('/api/auth', authRoutes);
+    this.app.use('/api/news', newsRoutes);
+    this.app.use('/api/article', articleRoutes);
+    this.app.use('/api/quizzes', quizRoutes);
+    this.app.use("/api/v1", chatRoute);
 
-app.use(cookieParser()); 
-app.use(bodyParser.json());
+    // Health check endpoint
+    this.app.get('/health', (req, res) => {
+      res.status(200).json({
+        status: 'healthy',
+        timestamp: new Date().toISOString()
+      });
+    });
 
-const PORT = process.env.PORT || 3000;
+    // Handle 404 errors
+    this.app.use('*', (req, res) => {
+      res.status(404).json({
+        success: false,
+        message: 'Resource not found'
+      });
+    });
+  }
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+  /**
+   * Configure error handling middleware
+   */
+  setupErrorHandling() {
+    this.app.use((err, req, res, next) => {
+      console.error('Error:', err);
 
+      // Determine status code
+      const statusCode = err.statusCode || 500;
 
+      // Send error response
+      res.status(statusCode).json({
+        success: false,
+        statusCode: statusCode,
+        message: err.message || 'An unexpected error occurred. Please try again later.',
+        stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
+      });
+    });
+  }
 
-app.use('/api/user', userRoutes);
-app.use('/api/auth', authRoutes);
-// quiz routes
-app.use('/api/news', newsRoutes);
-app.use('/api/article', articleRoutes);
-app.use('/api/quizzes', quizRoutes);
-app.use("/api/v1", chatRoute);
+  /**
+   * Start the server
+   */
+  start() {
+    this.app.listen(this.serverPort, () => {
+      console.log(`
+🚀 Server is running on port ${this.serverPort}
+📝 API Documentation: http://localhost:${this.serverPort}/api-docs
+🔧 Environment: ${process.env.NODE_ENV || 'development'}
+      `);
+    });
+  }
+}
 
+/**
+ * Main application execution
+ */
+async function startApplication() {
+  try {
+    // Initialize database connection
+    await DatabaseConnection.initialize();
 
+    // Create and start server
+    const server = new Server();
+    server.start();
 
+    // Handle unexpected errors
+    process.on('uncaughtException', (error) => {
+      console.error('Uncaught Exception:', error);
+      process.exit(1);
+    });
 
-app.use((err, req, res, next) => {
-  const statusCode = err.statusCode || 500;
-  const message = err.message || 'Internal Server Error';
-  res.status(statusCode).json({
-    success: false,
-    statusCode,
-    message,
-  });
-});
+    process.on('unhandledRejection', (reason, promise) => {
+      console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+      process.exit(1);
+    });
+
+  } catch (error) {
+    console.error('Failed to start application:', error);
+    process.exit(1);
+  }
+}
+
+// Start the application
+startApplication();

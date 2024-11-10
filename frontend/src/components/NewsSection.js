@@ -11,45 +11,11 @@ const NewsSection = () => {
 
   const fetchNews = async () => {
     try {
-      // const response = await axios.get(
-      //   `http://api.mediastack.com/v1/news?access_key=148a35feda6f9e00820781a6a81a9856&countries=in&languages=en`
-      // );
-      // const filteredNews = response.data.data.filter((article) => article.image); // Filters for articles with images
-      const placeholderData = [
-        {
-          title: "Placeholder News Title 1",
-          description: "This is a short description for placeholder news 1.",
-          image: "https://via.placeholder.com/800x400",
-          url: "#"
-        },
-        {
-          title: "Placeholder News Title 2",
-          description: "This is a short description for placeholder news 2.",
-          image: "https://via.placeholder.com/800x400",
-          url: "#"
-        },
-        {
-          title: "Placeholder News Title 3",
-          description: "This is a short description for placeholder news 3.",
-          image: "https://via.placeholder.com/800x400",
-          url: "#"
-        },
-        {
-          title: "Placeholder News Title 4",
-          description: "This is a short description for placeholder news 4.",
-          image: "https://via.placeholder.com/800x400",
-          url: "#"
-        },
-        {
-          title: "Placeholder News Title 5",
-          description: "This is a short description for placeholder news 5.",
-          image: "https://via.placeholder.com/800x400",
-          url: "#"
-        }
-      ];
-      setNews(placeholderData);
-
-      // setNews(filteredNews);
+      const response = await axios.get(
+        `http://api.mediastack.com/v1/news?access_key=148a35feda6f9e00820781a6a81a9856&countries=in&languages=en`
+      );
+      const filteredNews = response.data.data.filter((article) => article.image); // Filters for articles with images
+      setNews(filteredNews);
     } catch (error) {
       console.error("Error fetching news:", error);
     }
@@ -64,7 +30,10 @@ const NewsSection = () => {
   };
 
   return (
-    <div className="relative w-70vh  mx-auto overflow-hidden poppins-regular"> {/* Increased max-width */}
+    <div className="relative w-70vh mx-auto overflow-hidden poppins-regular"> {/* Increased max-width */}
+      {/* News Section Heading */}
+      <h2 className="text-3xl font-bold text-center text-gray-900 mb-8 mt-6">Latest News</h2>
+
       {news.length > 0 && (
         <div className="flex justify-center items-center relative">
           <button

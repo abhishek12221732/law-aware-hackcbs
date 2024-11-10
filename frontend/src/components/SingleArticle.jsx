@@ -35,13 +35,10 @@ const SingleArticle = () => {
     if (!newComment.trim()) return;
     try {
       const response = await axios.post(`${base_url}/api/article/comment/${articleId}`, { text: newComment }, { withCredentials: true });
-      console.log('New comment response:', response.data);
-      
       const newCommentObject = {
         text: newComment,
         user: 'Anonymous User',
       };
-      
       setComments((prevComments) => [...prevComments, newCommentObject]);
       setNewComment('');
     } catch (err) {
@@ -53,7 +50,6 @@ const SingleArticle = () => {
     const fetchArticle = async () => {
       try {
         const response = await axios.get(`${base_url}/api/article/get/${articleId}`, { withCredentials: true });
-        console.log('Fetched article data:', response.data);
         setArticle(response.data);
         setIsLoading(false);
         setLiked(response.data.liked);
@@ -98,12 +94,12 @@ const SingleArticle = () => {
   const paragraphs = splitIntoParagraphs(article.description);
 
   return (
-    <div className="min-h-screen bg-[#1A1A1A] text-white py-12 pt-20"> 
+    <div className="min-h-screen bg-white text-gray-900 py-12 pt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-        <article className="bg-[#2A2A2A] rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:shadow-3xl">
+        <article className="bg-gray-100 rounded-xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:shadow-3xl">
           <div className="p-6 sm:p-10">
             <div className="flex justify-between items-center mb-6">
-              <p className="text-lg text-[#E0E0E0] font-semibold">Article {article.article}</p>
+              <p className="text-lg text-gray-700 font-semibold">Article {article.article}</p>
               <div className="flex space-x-4">
                 <button 
                   onClick={likeArticle} 
@@ -122,8 +118,8 @@ const SingleArticle = () => {
                 </button>
               </div>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-[#E0E0E0] leading-tight">{article.title}</h1>
-            <div className="prose max-w-none text-lg text-[#D3D9D4]">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-gray-800 leading-tight">{article.title}</h1>
+            <div className="prose max-w-none text-lg text-gray-700">
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="mb-4 leading-relaxed">
                   {paragraph.split('\n').map((line, lineIndex) => (
@@ -136,14 +132,14 @@ const SingleArticle = () => {
               ))}
             </div>
           </div>
-          <div className="bg-[#2A2A2A] px-6 py-4 sm:px-10 sm:py-6 mt-8">
-            <p className="text-lg font-semibold text-[#E0E0E0] mb-2">Was this article helpful?</p>
+          <div className="bg-gray-100 px-6 py-4 sm:px-10 sm:py-6 mt-8">
+            <p className="text-lg font-semibold text-gray-800 mb-2">Was this article helpful?</p>
             <div className="flex space-x-4">
-              <button className="flex items-center space-x-2 text-green-400 hover:text-green-500 transition-colors duration-300">
+              <button className="flex items-center space-x-2 text-green-500 hover:text-green-600 transition-colors duration-300">
                 <FaThumbsUp className="h-6 w-6" />
                 <span>Yes</span>
               </button>
-              <button className="flex items-center space-x-2 text-red-400 hover:text-red-500 transition-colors duration-300">
+              <button className="flex items-center space-x-2 text-red-500 hover:text-red-600 transition-colors duration-300">
                 <FaThumbsDown className="h-6 w-6" />
                 <span>No</span>
               </button>
@@ -151,26 +147,26 @@ const SingleArticle = () => {
           </div>
         </article>
 
-        <div className="bg-[#2A2A2A] p-6 mt-6 shadow rounded-lg">
-          <h2 className="text-2xl font-semibold mb-4 text-[#E0E0E0]">Comments</h2>
+        <div className="bg-gray-100 p-6 mt-6 shadow rounded-lg">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-800">Comments</h2>
           {comments.length > 0 ? (
             comments.map((comment, index) => (
               <div key={index} className="mb-4">
-                <p className="text-sm font-semibold text-[#D3D9D4]">
+                <p className="text-sm font-semibold text-gray-800">
                   {comment.user || 'Anonymous User'}
                 </p>
-                <p className="text-gray-400">{comment.text}</p>
+                <p className="text-gray-600">{comment.text}</p>
               </div>
             ))
           ) : (
-            <p className="text-gray-400">No comments yet. Be the first to comment!</p>
+            <p className="text-gray-600">No comments yet. Be the first to comment!</p>
           )}
 
           <div className="mt-6">
             <textarea
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
-              className="w-full p-3 border border-gray-600 bg-[#2A2A2A] text-white rounded-lg"
+              className="w-full p-3 border border-gray-300 bg-white text-gray-900 rounded-lg"
               rows="3"
               placeholder="Write a comment..."
             ></textarea>

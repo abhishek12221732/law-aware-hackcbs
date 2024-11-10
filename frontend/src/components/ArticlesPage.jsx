@@ -29,23 +29,23 @@ const ArticleList = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#212A31] py-12 text-[#D3D9D4]">
+    <div className="min-h-screen bg-[#F9FAFB] py-12 text-[#333]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-center mb-12 mt-16">
           <span className="inline-block mr-3">
-            <FaBookOpen className="text-[#124E66]" />
+            <FaBookOpen className="text-[#1A73E8]" />
           </span>
           Articles
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((article) => (
-            <div key={article._id} className="bg-[#2E3944] rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1">
+            <div key={article._id} className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1">
               <div className="p-6">
-                <h2 className="text-2xl font-semibold mb-3 line-clamp-2 text-[#D3D9D4]">{article.title}</h2>
-                <p className="text-[#748D92] mb-4 text-sm">Article #{article.article}</p>
+                <h2 className="text-2xl font-semibold mb-3 line-clamp-2 text-[#333]">{article.title}</h2>
+                <p className="text-[#555] mb-4 text-sm">Article #{article.article}</p>
                 <Link
                   to={`/article/${article._id}`}
-                  className="inline-flex items-center text-[#124E66] hover:text-blue-700 transition-colors duration-300 font-medium"
+                  className="inline-flex items-center text-[#1A73E8] hover:text-[#124E66] transition-colors duration-300 font-medium"
                 >
                   Read more
                   <FaChevronRight className="ml-1 text-sm" />
@@ -59,7 +59,7 @@ const ArticleList = () => {
             <button
               onClick={fetchArticles}
               disabled={isLoading}
-              className="bg-[#124E66] hover:bg-[#2E3944] text-[#D3D9D4] font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+              className="bg-[#1A73E8] hover:bg-[#124E66] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
             >
               {isLoading ? (
                 <>
