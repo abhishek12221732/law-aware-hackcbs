@@ -1,0 +1,92 @@
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e40af;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 30vw;
+    max-width: 90vw;
+    height: 65vh;
+    max-height: 90vh;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+}
+
+.chatbox {
+    padding: 1rem;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.chat-input {
+    padding: 1rem;
+    border-top: 1px solid #e2e8f0;
+    background-color: #f9fafb;
+    display: flex;
+}
+
+.chatbox li {
+    margin-bottom: 0.5rem; /* Space between messages */
+}
+
+/* Chatbot popup animation */
+.popup-enter {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  .popup-enter-active {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 300ms ease, opacity 300ms ease;
+  }
+  .popup-exit {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .popup-exit-active {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 300ms ease, opacity 300ms ease;
+  }
+/* Chatbot popup animation from bottom-right */
+.popup-enter {
+    transform-origin: bottom right;
+    transform: scale(0.8) translate(20px, 20px);
+    opacity: 0;
+  }
+  .popup-enter-active {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+    transition: transform 300ms ease, opacity 300ms ease;
+  }
+  .popup-exit {
+    transform-origin: bottom right;
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  .popup-exit-active {
+    transform: scale(0.8) translate(20px, 20px);
+    opacity: 0;
+    transition: transform 300ms ease, opacity 300ms ease;
+  }
+    

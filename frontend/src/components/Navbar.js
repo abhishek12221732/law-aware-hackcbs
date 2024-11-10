@@ -42,7 +42,7 @@ const Navbar = () => {
         </h1>
         <div className="flex items-center space-x-12">
           <Link to="/" className="hover:text-[#69b578]">HOME</Link>
-          <Link to="/children" className='hover:text-[#69b578]'>CHILDREN</Link>
+          {/* <Link to="/children" className='hover:text-[#69b578]'>CHILDREN</Link> */}
           <Link to="/learning" className="hover:text-[#69b578]">LEARNING</Link>
           <Link to="/awareness" className="hover:text-[#69b578]">AWARENESS</Link>
           <div

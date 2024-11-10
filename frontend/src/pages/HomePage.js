@@ -8,8 +8,48 @@ import line from "../assets/images/line.png";
 import FeaturesSection from "../components/FeatureSection.js";
 import ladyImage from "../assets/images/lady.png";
 import heroBackground from "../assets/images/hero-background.png";
-import Slider from "../components/Slider.js";
 import ParticleBackground from "../components/ParticleBackground.js";
+import { motion, AnimatePresence } from 'framer-motion';
+import {useState, useEffect} from 'react';
+
+
+const facts = [
+  "Did you know? The right to freedom of speech is a fundamental right.",
+  "Fact: Legal aid is available to those who cannot afford it.",
+  "Did you know? You have the right to a fair trial.",
+  "Fact: Laws are in place to protect consumer rights.",
+  "Did you know? The Constitution is the supreme law of the land."
+];
+
+const FactsSlider = ({ facts }) => {
+  const [currentFactIndex, setCurrentFactIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentFactIndex((prevIndex) => (prevIndex + 1) % facts.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [facts.length]);
+
+  return (
+    <div className="bg-gradient-to-r from-[#01161B] to-[#022a33] text-white p-2">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentFactIndex}
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -50, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center font-semibold mt-32 -mb-32"
+          style={{ fontSize: '2rem' }} // Increase font size
+        >
+          {facts[currentFactIndex]}
+        </motion.div>
+      </AnimatePresence>
+    </div>
+  );
+};
+
 
 const HomePage = () => {
   return (
@@ -65,13 +105,19 @@ const HomePage = () => {
       {/* Other sections */}
       <section className="bg-[#f0f4f8]">
         <PreambleSection />
-        <NewsSection />
+      </section>
+
+      <section className="bg-[#ffffff]">
+      <NewsSection />
+      </section>
+
+      <section>
+      <FactsSlider facts={facts} />
       </section>
 
       <section className="bg-[#ffffff]">
         <FeaturesSection />
       </section>
-      <Slider />
 
       <section className="bg-[#f0f4f8]">
         <AboutUs />

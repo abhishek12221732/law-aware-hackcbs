@@ -37,7 +37,7 @@ body {
 }
 
 .gradient-bg {
-  background: linear-gradient(45deg, #f2f6fc, #a0c4d7, #6c91b8, #03254e);
+  background: linear-gradient(45deg, #ff671f, #ffffff, #046838);
   background-size: 300% 300%;
   animation: gradientAnimation 12s ease infinite;
 }

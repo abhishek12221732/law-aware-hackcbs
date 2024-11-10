@@ -37,7 +37,8 @@ const FAQSection = () => {
     <div className="bg-gray-100 p-8 min-h-screen">
       {/* Heading */}
       <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center ">
-        Frequently Asked Legal Questions
+        FAQs
+
       </h2>
 
       {/* FAQ Boxes */}
