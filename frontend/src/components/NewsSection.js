@@ -12,7 +12,7 @@ const NewsSection = () => {
   const fetchNews = async () => {
     try {
       // const response = await axios.get(
-      //   `http://api.mediastack.com/v1/news?access_key=2ba4b8052f812722ab86c724993730b3&countries=in&languages=en`
+      //   `http://api.mediastack.com/v1/news?access_key=148a35feda6f9e00820781a6a81a9856&countries=in&languages=en`
       // );
       // const filteredNews = response.data.data.filter((article) => article.image); // Filters for articles with images
       const placeholderData = [
@@ -64,7 +64,7 @@ const NewsSection = () => {
   };
 
   return (
-    <div className="relative w-70vh  mx-auto overflow-hidden"> {/* Increased max-width */}
+    <div className="relative w-70vh  mx-auto overflow-hidden poppins-regular"> {/* Increased max-width */}
       {news.length > 0 && (
         <div className="flex justify-center items-center relative">
           <button
@@ -83,9 +83,7 @@ const NewsSection = () => {
             {news.map((article, index) => (
               <div
                 key={index}
-                className={`w-1/3 flex-shrink-0 transform transition duration-500 ${
-                  index === currentSlide ? "scale-100 opacity-100" : "scale-90 opacity-50"
-                }`}
+                className={`w-1/3 flex-shrink-0 transform transition duration-500 ${index === currentSlide ? "scale-90 opacity-50" : "scale-90 opacity-50"} hover:scale-105 hover:opacity-100`}  // Added hover scale
                 style={{
                   margin: '0 15px',  // Increased margin between slides
                   transition: "transform 0.5s ease, opacity 0.5s ease"

@@ -8,7 +8,7 @@ import CaseStudySection from './CaseSutySection'
 const LearningPage = () => {
   
   return (
-    <div className='bg-black'>
+    <div className='bg-[#F5F5DC]'>
       <LearningFeature/>
       <ConstitutionFeature/>
       <CaseStudySection />

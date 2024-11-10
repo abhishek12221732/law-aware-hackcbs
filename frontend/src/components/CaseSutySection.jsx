@@ -382,35 +382,35 @@ Inappropriate decision-making and an opaque business model led Kingfisher Airlin
   };
 
   return (
-    <div className="container mx-auto py-8 px-4 bg-black min-h-screen text-white">
-      <h2 className="text-4xl font-bold text-center mb-8">Case Studies</h2>
+    <div className="container mx-auto py-8 px-4 min-h-screen font-merriweather bg-[#F5F5DC]">
+      <h2 className="text-4xl font-extrabold text-center mb-8 text-gray-800 font-poppins">Case Studies</h2>
 
       {/* Card grid layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {caseStudies.map((caseStudy, index) => (
           <div
             key={index}
-            className="bg-gray-800 p-6 rounded-lg shadow-lg cursor-pointer transition-transform transform hover:scale-105 hover:bg-gray-700"
+            className="bg-white p-6 rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105 hover:shadow-xl"
             onClick={() => setSelectedCase(index)} // Set the selected case index on click
           >
-            <h3 className="text-xl font-bold text-white">{caseStudy.title}</h3>
-            <p className="mt-2 text-gray-400">Click to read more...</p>
+            <h3 className="text-xl font-bold text-gray-800 font-poppins">{caseStudy.title}</h3>
+            <p className="mt-2 text-gray-600 font-merriweather">Click to read more...</p>
           </div>
         ))}
       </div>
 
       {/* Full-screen modal popup */}
       {selectedCase !== null && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
-          <div className="modal-content relative bg-gray-900 p-8 rounded-lg shadow-lg max-w-3xl w-full h-5/6 overflow-y-auto text-white">
+        <div className="fixed inset-0 bg-opacity-90 flex justify-center items-center z-50 bg-gray-200">
+          <div className="modal-content relative bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full h-5/6 overflow-y-auto text-gray-800">
             <button
-              className="absolute top-4 right-4 bg-white text-black py-2 px-4 rounded-lg"
+              className="absolute top-4 right-4 text-gray-800 py-2 px-4 rounded-lg bg-gray-300 hover:bg-gray-400"
               onClick={closeModal}
             >
               Back
             </button>
-            <h3 className="text-3xl font-bold mb-4">{caseStudies[selectedCase].title}</h3>
-            <p className="whitespace-pre-line">{caseStudies[selectedCase].content}</p>
+            <h3 className="text-3xl font-extrabold mb-4 font-poppins text-gray-800">{caseStudies[selectedCase].title}</h3>
+            <p className="whitespace-pre-line font-merriweather text-gray-700">{caseStudies[selectedCase].content}</p>
           </div>
         </div>
       )}

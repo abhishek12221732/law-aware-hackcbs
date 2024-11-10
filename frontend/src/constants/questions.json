@@ -1,181 +1,713 @@
-[
+{
+  "Preamble_and_Basic_Structure": [
     {
-      "question": "What is the supreme law of India?",
-      "options": ["The Constitution of India", "The Penal Code", "The Civil Code", "The Labour Law"],
-      "correctAnswer": "The Constitution of India"
+      "question": "Which case first mentioned the basic structure of the Constitution?",
+      "options": ["A. Golaknath Case", "B. Kesavananda Bharati Case", "C. Shankari Prasad Case", "D. Minerva Mills Case"],
+      "answer": "B"
     },
     {
-      "question": "Which article of the Indian Constitution guarantees the Right to Equality?",
-      "options": ["Article 14", "Article 21", "Article 19", "Article 32"],
-      "correctAnswer": "Article 14"
+      "question": "The Preamble declares India to be:",
+      "options": ["A. Sovereign, Socialist, Democratic Republic", "B. Sovereign, Secular, Socialist, Democratic Republic", "C. Federal, Secular, Socialist, Republic", "D. Union, Secular, Republic"],
+      "answer": "B"
     },
     {
-      "question": "What is the minimum age for a person to be eligible to become the President of India?",
-      "options": ["35 years", "30 years", "40 years", "25 years"],
-      "correctAnswer": "35 years"
+      "question": "Which part of the Constitution is non-justiciable?",
+      "options": ["A. Preamble", "B. Fundamental Rights", "C. Directive Principles", "D. Schedules"],
+      "answer": "A"
     },
     {
-      "question": "Who is known as the Father of the Indian Constitution?",
-      "options": ["Jawaharlal Nehru", "Sardar Patel", "B.R. Ambedkar", "Mahatma Gandhi"],
-      "correctAnswer": "B.R. Ambedkar"
+      "question": "What does the term 'Fraternity' in the Preamble signify?",
+      "options": ["A. Political unity", "B. Legal equality", "C. A sense of brotherhood", "D. Economic development"],
+      "answer": "C"
     },
     {
-      "question": "Which article provides for the abolition of untouchability?",
-      "options": ["Article 17", "Article 19", "Article 21", "Article 32"],
-      "correctAnswer": "Article 17"
+      "question": "In which year was the Preamble amended?",
+      "options": ["A. 1962", "B. 1976", "C. 1984", "D. 1991"],
+      "answer": "B"
     },
     {
-      "question": "Which amendment of the Indian Constitution introduced the concept of 'Directive Principles of State Policy'?",
-      "options": ["1st Amendment", "42nd Amendment", "44th Amendment", "73rd Amendment"],
-      "correctAnswer": "42nd Amendment"
+      "question": "Which word was NOT in the original Preamble?",
+      "options": ["A. Socialist", "B. Secular", "C. Integrity", "D. Sovereign"],
+      "answer": "C"
     },
     {
-      "question": "The Indian Constitution came into effect on which date?",
-      "options": ["January 26, 1950", "August 15, 1947", "January 1, 1951", "October 2, 1952"],
-      "correctAnswer": "January 26, 1950"
+      "question": "Which principle was added by the Kesavananda Bharati judgment?",
+      "options": ["A. Judicial activism", "B. Doctrine of separation of powers", "C. Basic structure doctrine", "D. Parliamentary supremacy"],
+      "answer": "C"
     },
     {
-      "question": "What is the maximum term for the President of India?",
-      "options": ["5 years", "6 years", "4 years", "3 years"],
-      "correctAnswer": "5 years"
+      "question": "Who described the Preamble as the 'Identity Card of the Constitution'?",
+      "options": ["A. Dr. B.R. Ambedkar", "B. N.A. Palkhivala", "C. Jawaharlal Nehru", "D. M.C. Chagla"],
+      "answer": "B"
     },
     {
-      "question": "Which body has the power to amend the Constitution of India?",
-      "options": ["Parliament", "Supreme Court", "President", "Governor"],
-      "correctAnswer": "Parliament"
+      "question": "The Preamble states the Constitution aims to secure justice in which forms?",
+      "options": ["A. Social and political", "B. Economic and social", "C. Social, economic, and political", "D. Political only"],
+      "answer": "C"
     },
     {
-      "question": "Who appoints the Prime Minister of India?",
-      "options": ["President", "Chief Justice", "Parliament", "Lok Sabha"],
-      "correctAnswer": "President"
+      "question": "The phrase 'Unity and integrity of the Nation' was added by which Amendment?",
+      "options": ["A. 38th Amendment", "B. 42nd Amendment", "C. 44th Amendment", "D. 52nd Amendment"],
+      "answer": "B"
     },
     {
-      "question": "Which article of the Indian Constitution guarantees the Right to Freedom of Speech and Expression?",
-      "options": ["Article 19", "Article 21", "Article 32", "Article 25"],
-      "correctAnswer": "Article 19"
+      "question": "What is the importance of the phrase 'We, the people of India'?",
+      "options": ["A. Establishes parliamentary supremacy", "B. Declares sovereignty resides in the people", "C. Indicates judicial review", "D. Suggests federalism"],
+      "answer": "B"
     },
     {
-      "question": "Which part of the Indian Constitution deals with Fundamental Rights?",
-      "options": ["Part III", "Part IV", "Part V", "Part VI"],
-      "correctAnswer": "Part III"
+      "question": "What is the meaning of 'Republic' in the Preamble?",
+      "options": ["A. Head of state is elected", "B. Power lies with the states", "C. Only fundamental duties", "D. Judiciary has control"],
+      "answer": "A"
     },
     {
-      "question": "What is the role of the Rajya Sabha in the Indian Parliament?",
-      "options": ["Upper House", "Lower House", "Legislative Assembly", "Judiciary"],
-      "correctAnswer": "Upper House"
+      "question": "Who presided over the Constituent Assembly of India?",
+      "options": ["A. B.R. Ambedkar", "B. Rajendra Prasad", "C. Jawaharlal Nehru", "D. Sardar Patel"],
+      "answer": "B"
     },
     {
-      "question": "Who has the power to dissolve the Lok Sabha?",
-      "options": ["Prime Minister", "President", "Chief Justice", "Governor"],
-      "correctAnswer": "President"
+      "question": "What is the nature of the Indian Constitution as stated in the Preamble?",
+      "options": ["A. Rigid", "B. Flexible", "C. Partly rigid and partly flexible", "D. Customary"],
+      "answer": "C"
     },
     {
-      "question": "Which article deals with the appointment of the Chief Justice of India?",
-      "options": ["Article 124", "Article 50", "Article 76", "Article 312"],
-      "correctAnswer": "Article 124"
+      "question": "Who is considered the Father of the Indian Constitution?",
+      "options": ["A. Dr. B.R. Ambedkar", "B. Mahatma Gandhi", "C. Rajendra Prasad", "D. C. Rajagopalachari"],
+      "answer": "A"
+    }
+  ],
+  "Fundamental_Rights_and_Duties": [
+    {
+      "question": "Which Article is known as the 'heart and soul' of the Constitution?",
+      "options": ["A. Article 19", "B. Article 21", "C. Article 32", "D. Article 14"],
+      "answer": "C"
     },
     {
-      "question": "Which amendment of the Indian Constitution is known as the 'Ministry of Home Affairs' Amendment?",
-      "options": ["73rd Amendment", "74th Amendment", "42nd Amendment", "44th Amendment"],
-      "correctAnswer": "44th Amendment"
+      "question": "Which Article abolishes untouchability?",
+      "options": ["A. Article 15", "B. Article 16", "C. Article 17", "D. Article 18"],
+      "answer": "C"
     },
     {
-      "question": "Which article provides for the right to constitutional remedies?",
-      "options": ["Article 32", "Article 226", "Article 19", "Article 21"],
-      "correctAnswer": "Article 32"
+      "question": "What does Article 21 ensure?",
+      "options": ["A. Right to equality", "B. Right to life and personal liberty", "C. Right to education", "D. Right to form associations"],
+      "answer": "B"
     },
     {
-      "question": "What is the term used to describe the President’s powers to dissolve the Parliament?",
-      "options": ["Emergency Powers", "Dissolution Powers", "Legislative Powers", "Executive Powers"],
-      "correctAnswer": "Dissolution Powers"
+      "question": "Which Article deals with the 'Protection of language, script, and culture of minorities'?",
+      "options": ["A. Article 27", "B. Article 29", "C. Article 30", "D. Article 28"],
+      "answer": "B"
     },
     {
-      "question": "What is the maximum number of members in the Lok Sabha?",
-      "options": ["545", "550", "560", "600"],
-      "correctAnswer": "550"
+      "question": "What is not included under Article 19?",
+      "options": ["A. Freedom of speech", "B. Right to assemble peacefully", "C. Right to form associations", "D. Right to property"],
+      "answer": "D"
     },
     {
-      "question": "Which article deals with the abolition of the practice of 'Sati'?",
-      "options": ["Article 15", "Article 17", "Article 25", "Article 32"],
-      "correctAnswer": "Article 17"
+      "question": "Which Article prohibits child labor?",
+      "options": ["A. Article 21", "B. Article 24", "C. Article 23", "D. Article 22"],
+      "answer": "B"
     },
     {
-      "question": "Which article of the Indian Constitution provides for the appointment of the Comptroller and Auditor General?",
-      "options": ["Article 148", "Article 150", "Article 156", "Article 162"],
-      "correctAnswer": "Article 148"
+      "question": "Which Article discusses 'Freedom of Religion'?",
+      "options": ["A. Article 21", "B. Article 25", "C. Article 30", "D. Article 19"],
+      "answer": "B"
     },
     {
-      "question": "Which amendment introduced the 'Right to Education' as a Fundamental Right?",
-      "options": ["86th Amendment", "92nd Amendment", "97th Amendment", "101st Amendment"],
-      "correctAnswer": "86th Amendment"
+      "question": "What does Article 51A not mention as a duty?",
+      "options": ["A. To uphold the Constitution", "B. To protect the environment", "C. To safeguard public property", "D. To form political parties"],
+      "answer": "D"
     },
     {
-      "question": "Which article of the Constitution of India provides for the protection of the rights of minorities?",
-      "options": ["Article 29", "Article 30", "Article 31", "Article 32"],
-      "correctAnswer": "Article 30"
+      "question": "How many Fundamental Rights are there in the Indian Constitution?",
+      "options": ["A. 5", "B. 6", "C. 7", "D. 8"],
+      "answer": "B"
     },
     {
-      "question": "Who has the authority to declare a state emergency in India?",
-      "options": ["President", "Prime Minister", "Governor", "Chief Justice"],
-      "correctAnswer": "President"
+      "question": "What does the Right to Equality encompass?",
+      "options": ["A. Articles 12-18", "B. Articles 14-18", "C. Articles 15-19", "D. Articles 12-14"],
+      "answer": "B"
     },
     {
-      "question": "Which article deals with the powers of the Governor of a state?",
-      "options": ["Article 153", "Article 154", "Article 155", "Article 156"],
-      "correctAnswer": "Article 154"
+      "question": "Under which Article is freedom of the press included?",
+      "options": ["A. Article 19(1)(a)", "B. Article 20", "C. Article 21", "D. Article 18"],
+      "answer": "A"
     },
     {
-      "question": "Which article deals with the appointment of the Chief Election Commissioner?",
-      "options": ["Article 324", "Article 325", "Article 326", "Article 327"],
-      "correctAnswer": "Article 324"
+      "question": "Which Article allows preventive detention laws?",
+      "options": ["A. Article 19", "B. Article 22", "C. Article 21", "D. Article 20"],
+      "answer": "B"
     },
     {
-      "question": "Which amendment granted reservation for Scheduled Tribes and Scheduled Castes in educational institutions?",
-      "options": ["76th Amendment", "77th Amendment", "78th Amendment", "79th Amendment"],
-      "correctAnswer": "77th Amendment"
+      "question": "What does Article 16 guarantee?",
+      "options": ["A. Right to equality", "B. Equality of opportunity in public employment", "C. Freedom of movement", "D. Right to education"],
+      "answer": "B"
     },
     {
-      "question": "What is the minimum age required to become a member of the Rajya Sabha?",
-      "options": ["30 years", "35 years", "25 years", "40 years"],
-      "correctAnswer": "30 years"
+      "question": "How many Fundamental Duties are there as per the Constitution?",
+      "options": ["A. 9", "B. 10", "C. 11", "D. 12"],
+      "answer": "C"
     },
     {
-      "question": "Which part of the Constitution deals with the Union and its Territory?",
-      "options": ["Part I", "Part II", "Part III", "Part IV"],
-      "correctAnswer": "Part I"
+      "question": "Which Fundamental Right was removed from the list by the 44th Amendment?",
+      "options": ["A. Right to property", "B. Right to equality", "C. Right to religion", "D. Right to privacy"],
+      "answer": "A"
+    }
+  ],
+  "Directive_Principles_of_State_Policy": [
+    {
+      "question": "Which Article directs the State to secure a social order for the promotion of welfare of the people?",
+      "options": ["A. Article 38", "B. Article 39", "C. Article 40", "D. Article 41"],
+      "answer": "A"
     },
     {
-      "question": "Which article provides for the protection of cultural and educational rights of minorities?",
-      "options": ["Article 29", "Article 30", "Article 31", "Article 32"],
-      "correctAnswer": "Article 29"
+      "question": "Which Directive Principle encourages the State to promote international peace and security?",
+      "options": ["A. Article 50", "B. Article 51", "C. Article 45", "D. Article 47"],
+      "answer": "B"
     },
     {
-      "question": "What is the maximum term for a member of the Rajya Sabha?",
-      "options": ["6 years", "5 years", "4 years", "3 years"],
-      "correctAnswer": "6 years"
+      "question": "What does Article 40 mandate?",
+      "options": ["A. Free legal aid", "B. Organization of village panchayats", "C. Uniform Civil Code", "D. Separation of judiciary from the executive"],
+      "answer": "B"
     },
     {
-      "question": "Which article of the Constitution empowers the Parliament to enact laws on subjects in the Union List?",
-      "options": ["Article 246", "Article 249", "Article 250", "Article 251"],
-      "correctAnswer": "Article 246"
+      "question": "Which Article aims for equal justice and free legal aid?",
+      "options": ["A. Article 38", "B. Article 39A", "C. Article 42", "D. Article 43"],
+      "answer": "B"
     },
     {
-      "question": "Which article of the Indian Constitution provides for the composition of the Supreme Court?",
-      "options": ["Article 124", "Article 125", "Article 126", "Article 127"],
-      "correctAnswer": "Article 124"
+      "question": "Which Article deals with the protection and improvement of the environment?",
+      "options": ["A. Article 47", "B. Article 48", "C. Article 48A", "D. Article 49"],
+      "answer": "C"
     },
     {
-      "question": "Which article of the Constitution provides for the setting up of a State Public Service Commission?",
-      "options": ["Article 315", "Article 316", "Article 317", "Article 318"],
-      "correctAnswer": "Article 315"
+      "question": "Which Article focuses on raising the level of nutrition and standard of living?",
+      "options": ["A. Article 45", "B. Article 47", "C. Article 44", "D. Article 49"],
+      "answer": "B"
     },
     {
-      "question": "Which article provides for the establishment of the Indian Council of Agricultural Research?",
-      "options": ["Article 37", "Article 48", "Article 51", "Article 52"],
-      "correctAnswer": "Article 48"
+      "question": "The Gandhian principles in DPSP emphasize:",
+      "options": ["A. Centralized economy", "B. Welfare state", "C. Cottage industries", "D. Strong military"],
+      "answer": "C"
     },
     {
-      "question": "Which article of the Constitution deals with the State of Emergency?",
-      "options": ["Article 352", "Article 356", "Article 360", "Article 365"],
-      "correctAnswer": "Article 352"
-    }]
+      "question": "Which Article urges the State to provide free and compulsory education?",
+      "options": ["A. Article 41", "B. Article 45", "C. Article 46", "D. Article 44"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article promotes equal pay for equal work?",
+      "options": ["A. Article 39(d)", "B. Article 41", "C. Article 38", "D. Article 42"],
+      "answer": "A"
+    },
+    {
+      "question": "The Directive Principles are inspired by which country’s Constitution?",
+      "options": ["A. United States", "B. Ireland", "C. Canada", "D. France"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article focuses on promoting the educational and economic interests of SCs, STs, and other weaker sections?",
+      "options": ["A. Article 45", "B. Article 46", "C. Article 47", "D. Article 48"],
+      "answer": "B"
+    },
+    {
+      "question": "What does Article 44 advocate?",
+      "options": ["A. Separation of powers", "B. Promotion of international peace", "C. Uniform Civil Code", "D. Decentralization"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article suggests the separation of the judiciary from the executive?",
+      "options": ["A. Article 47", "B. Article 48", "C. Article 49", "D. Article 50"],
+      "answer": "D"
+    },
+    {
+      "question": "What is the legal status of Directive Principles?",
+      "options": ["A. Justiciable", "B. Non-justiciable", "C. Enforceable by courts", "D. Similar to Fundamental Rights"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article asks the State to secure a living wage for workers?",
+      "options": ["A. Article 41", "B. Article 43", "C. Article 39", "D. Article 42"],
+      "answer": "B"
+    }
+  ],
+  "Union_and_Its_Territory": [
+    {
+      "question": "Which Article mentions the name 'India, that is Bharat'?",
+      "options": ["A. Article 1", "B. Article 2", "C. Article 3", "D. Article 4"],
+      "answer": "A"
+    },
+    {
+      "question": "Which Article empowers the Parliament to admit new states?",
+      "options": ["A. Article 1", "B. Article 2", "C. Article 3", "D. Article 4"],
+      "answer": "B"
+    },
+    {
+      "question": "How many states and union territories were there at the time of independence?",
+      "options": ["A. 15 states and 6 UTs", "B. 14 states and 7 UTs", "C. 10 states and 5 UTs", "D. 12 states and 4 UTs"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the key difference between Articles 2 and 3?",
+      "options": ["A. Both deal with territories", "B. Article 2 deals with admission, Article 3 with formation", "C. Article 3 deals with ceding territories", "D. Both are unrelated"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Act reorganized states on linguistic lines?",
+      "options": ["A. State Reorganization Act, 1952", "B. State Reorganization Act, 1956", "C. 42nd Amendment Act", "D. 44th Amendment Act"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article provides for the formation of new states?",
+      "options": ["A. Article 1", "B. Article 2", "C. Article 3", "D. Article 4"],
+      "answer": "C"
+    },
+    {
+      "question": "What does Article 4 specify?",
+      "options": ["A. Procedures for amendments", "B. Laws under Articles 2 and 3 are not to be considered amendments", "C. Division of powers", "D. Types of emergencies"],
+      "answer": "B"
+    },
+    {
+      "question": "Which is the largest union territory by area?",
+      "options": ["A. Delhi", "B. Andaman and Nicobar Islands", "C. Ladakh", "D. Jammu and Kashmir"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article deals with the cession of Indian territory?",
+      "options": ["A. Article 1", "B. Article 3", "C. Article 368", "D. Not mentioned explicitly"],
+      "answer": "D"
+    },
+    {
+      "question": "Which region became a union territory after the abrogation of Article 370?",
+      "options": ["A. Ladakh", "B. Sikkim", "C. Goa", "D. Pondicherry"],
+      "answer": "A"
+    },
+    {
+      "question": "When was the State of Telangana formed?",
+      "options": ["A. 2013", "B. 2014", "C. 2015", "D. 2016"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article in the Constitution refers to the special provisions for the state of Jammu and Kashmir?",
+      "options": ["A. Article 350", "B. Article 356", "C. Article 370", "D. Article 371"],
+      "answer": "C"
+    },
+    {
+      "question": "The Andaman and Nicobar Islands are under which schedule of the Indian Constitution?",
+      "options": ["A. First Schedule", "B. Second Schedule", "C. Fifth Schedule", "D. Sixth Schedule"],
+      "answer": "A"
+    },
+    {
+      "question": "Which Article of the Constitution was used to create the new Union Territories of Jammu and Kashmir and Ladakh?",
+      "options": ["A. Article 3", "B. Article 2", "C. Article 370", "D. Article 371"],
+      "answer": "A"
+    },
+    {
+      "question": "Which is the smallest Union Territory by area?",
+      "options": ["A. Daman and Diu", "B. Chandigarh", "C. Lakshadweep", "D. Puducherry"],
+      "answer": "C"
+    }
+  ],
+  "The_President_and_the_Executive": [
+    {
+      "question": "What is the minimum age required to be eligible for the office of President?",
+      "options": ["A. 25 years", "B. 30 years", "C. 35 years", "D. 40 years"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article outlines the election of the President?",
+      "options": ["A. Article 52", "B. Article 54", "C. Article 56", "D. Article 58"],
+      "answer": "B"
+    },
+    {
+      "question": "Which body is responsible for conducting the presidential election?",
+      "options": ["A. Supreme Court", "B. Lok Sabha", "C. Election Commission of India", "D. Rajya Sabha"],
+      "answer": "C"
+    },
+    {
+      "question": "Who administers the oath of office to the President of India?",
+      "options": ["A. Chief Justice of India", "B. Prime Minister", "C. Vice-President", "D. Speaker of the Lok Sabha"],
+      "answer": "A"
+    },
+    {
+      "question": "Which Article allows the President to declare a National Emergency?",
+      "options": ["A. Article 356", "B. Article 352", "C. Article 360", "D. Article 365"],
+      "answer": "B"
+    },
+    {
+      "question": "Who acts as President if the office becomes vacant?",
+      "options": ["A. Prime Minister", "B. Vice-President", "C. Chief Justice of India", "D. Speaker of the Lok Sabha"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the maximum term of office for the President of India?",
+      "options": ["A. 4 years", "B. 5 years", "C. 6 years", "D. No fixed term"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article empowers the President to grant pardons and reprieves?",
+      "options": ["A. Article 70", "B. Article 72", "C. Article 74", "D. Article 76"],
+      "answer": "B"
+    },
+    {
+      "question": "Who can remove the President from office through impeachment?",
+      "options": ["A. Parliament", "B. Supreme Court", "C. Prime Minister", "D. Vice-President"],
+      "answer": "A"
+    },
+    {
+      "question": "In case of the resignation of the President, to whom does the President submit their resignation?",
+      "options": ["A. Chief Justice of India", "B. Prime Minister", "C. Vice-President", "D. Speaker of the Lok Sabha"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article provides for the discretionary powers of the President?",
+      "options": ["A. Article 74", "B. Article 75", "C. Article 78", "D. Article 86"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the role of the President in the Union Legislature?",
+      "options": ["A. Member of Lok Sabha", "B. Head of the Council of Ministers", "C. Part of Parliament", "D. Supreme Commander of the Armed Forces"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the salary of the President as per the latest amendment?",
+      "options": ["A. ₹1.5 lakh", "B. ₹2 lakh", "C. ₹5 lakh", "D. ₹10 lakh"],
+      "answer": "C"
+    },
+    {
+      "question": "Who appoints the Governors of states?",
+      "options": ["A. Prime Minister", "B. President", "C. Chief Justice of India", "D. Vice-President"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article specifies that the President must act according to the advice of the Council of Ministers?",
+      "options": ["A. Article 74", "B. Article 75", "C. Article 77", "D. Article 78"],
+      "answer": "A"
+    }
+  ],
+  "The_Parliament": [
+    {
+      "question": "Which is the highest law-making body in India?",
+      "options": ["A. Supreme Court", "B. Lok Sabha", "C. Rajya Sabha", "D. Parliament"],
+      "answer": "D"
+    },
+    {
+      "question": "What is the maximum strength of the Lok Sabha?",
+      "options": ["A. 500", "B. 525", "C. 545", "D. 552"],
+      "answer": "D"
+    },
+    {
+      "question": "Who has the power to summon and prorogue the sessions of Parliament?",
+      "options": ["A. Prime Minister", "B. Speaker of Lok Sabha", "C. President", "D. Vice-President"],
+      "answer": "C"
+    },
+    {
+      "question": "Who presides over the joint sitting of both houses of Parliament?",
+      "options": ["A. President", "B. Speaker of Lok Sabha", "C. Chairman of Rajya Sabha", "D. Prime Minister"],
+      "answer": "B"
+    },
+    {
+      "question": "What is a Money Bill?",
+      "options": ["A. A bill related to electoral reforms", "B. A bill dealing with taxation and government spending", "C. A bill on constitutional amendments", "D. A bill related to foreign policies"],
+      "answer": "B"
+    },
+    {
+      "question": "How many members of the Rajya Sabha are nominated by the President?",
+      "options": ["A. 10", "B. 12", "C. 14", "D. 15"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the tenure of a member of Rajya Sabha?",
+      "options": ["A. 3 years", "B. 4 years", "C. 5 years", "D. 6 years"],
+      "answer": "D"
+    },
+    {
+      "question": "Who is responsible for deciding whether a bill is a Money Bill?",
+      "options": ["A. President", "B. Prime Minister", "C. Speaker of Lok Sabha", "D. Vice-President"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the quorum required to hold a session of Parliament?",
+      "options": ["A. 1/5th of total members", "B. 1/4th of total members", "C. 1/3rd of total members", "D. 1/10th of total members"],
+      "answer": "D"
+    },
+    {
+      "question": "Under which Article can a joint session of Parliament be convened?",
+      "options": ["A. Article 108", "B. Article 112", "C. Article 124", "D. Article 130"],
+      "answer": "A"
+    },
+    {
+      "question": "Which type of bill requires the consent of the President before introduction?",
+      "options": ["A. Ordinary Bill", "B. Constitutional Amendment Bill", "C. Money Bill", "D. Financial Bill"],
+      "answer": "D"
+    },
+    {
+      "question": "Which of the following is not a function of Parliament?",
+      "options": ["A. Making laws", "B. Executing laws", "C. Amending the Constitution", "D. Controlling finances"],
+      "answer": "B"
+    },
+    {
+      "question": "Which house is considered the 'House of Elders'?",
+      "options": ["A. Lok Sabha", "B. Rajya Sabha", "C. Legislative Assembly", "D. Legislative Council"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article specifies the maximum number of members in Lok Sabha?",
+      "options": ["A. Article 80", "B. Article 81", "C. Article 85", "D. Article 90"],
+      "answer": "B"
+    },
+    {
+      "question": "Who elects the Deputy Speaker of the Lok Sabha?",
+      "options": ["A. President", "B. Prime Minister", "C. Members of Lok Sabha", "D. Chief Justice of India"],
+      "answer": "C"
+    }
+  ],
+  "Judiciary": [
+    {
+      "question": "What is the term of office for a Supreme Court judge?",
+      "options": ["A. 5 years", "B. Until the age of 62", "C. Until the age of 65", "D. 6 years"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article outlines the powers and jurisdiction of the Supreme Court?",
+      "options": ["A. Article 124", "B. Article 131", "C. Article 136", "D. Article 142"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article allows the Supreme Court to issue writs?",
+      "options": ["A. Article 32", "B. Article 226", "C. Article 137", "D. Article 141"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the minimum number of judges required to constitute a constitutional bench?",
+      "options": ["A. 3", "B. 5", "C. 7", "D. 9"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article states that the law declared by the Supreme Court is binding on all courts?",
+      "options": ["A. Article 129", "B. Article 132", "C. Article 141", "D. Article 143"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article allows the President to seek the Supreme Court's opinion?",
+      "options": ["A. Article 141", "B. Article 143", "C. Article 144", "D. Article 148"],
+      "answer": "B"
+    },
+    {
+      "question": "Who appoints the judges of the Supreme Court?",
+      "options": ["A. Prime Minister", "B. Chief Justice of India", "C. President", "D. Law Minister"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article outlines the removal process of Supreme Court judges?",
+      "options": ["A. Article 121", "B. Article 124(4)", "C. Article 126", "D. Article 127"],
+      "answer": "B"
+    },
+    {
+      "question": "Who was the first Chief Justice of India?",
+      "options": ["A. M. Patanjali Sastri", "B. H.J. Kania", "C. B.K. Mukherjea", "D. P.N. Bhagwati"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article ensures that the Supreme Court is a court of record?",
+      "options": ["A. Article 129", "B. Article 137", "C. Article 141", "D. Article 143"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the procedure for removing a Supreme Court judge?",
+      "options": ["A. Presidential order", "B. Resolution by both houses", "C. Chief Justice's approval", "D. Supreme Court's decision"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article empowers the High Courts to issue writs?",
+      "options": ["A. Article 32", "B. Article 226", "C. Article 131", "D. Article 137"],
+      "answer": "B"
+    },
+    {
+      "question": "How many types of writs can the Supreme Court issue?",
+      "options": ["A. 3", "B. 4", "C. 5", "D. 6"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article provides for the appellate jurisdiction of the Supreme Court?",
+      "options": ["A. Article 132", "B. Article 136", "C. Article 137", "D. Article 141"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the current strength of judges in the Supreme Court, including the Chief Justice?",
+      "options": ["A. 30", "B. 31", "C. 33", "D. 34"],
+      "answer": "D"
+    }
+  ],
+
+  "Amendments_and_Schedules": [
+    {
+      "question": "Which Amendment is known as the 'Mini-Constitution'?",
+      "options": ["A. 24th Amendment", "B. 42nd Amendment", "C. 44th Amendment", "D. 52nd Amendment"],
+      "answer": "B"
+    },
+    {
+      "question": "What does the Tenth Schedule of the Constitution deal with?",
+      "options": ["A. Panchayati Raj", "B. Languages", "C. Anti-defection law", "D. Administration of tribal areas"],
+      "answer": "C"
+    },
+    {
+      "question": "Which schedule of the Constitution lists the official languages?",
+      "options": ["A. Fifth Schedule", "B. Sixth Schedule", "C. Eighth Schedule", "D. Ninth Schedule"],
+      "answer": "C"
+    },
+    {
+      "question": "The First Schedule of the Constitution contains:",
+      "options": ["A. Fundamental Rights", "B. Union and State territories", "C. Panchayati Raj", "D. Anti-defection law"],
+      "answer": "B"
+    },
+    {
+      "question": "Which schedule deals with the administration and control of Scheduled Areas?",
+      "options": ["A. Fifth Schedule", "B. Seventh Schedule", "C. Eighth Schedule", "D. Tenth Schedule"],
+      "answer": "A"
+    },
+    {
+      "question": "How many Schedules were there originally in the Indian Constitution?",
+      "options": ["A. 10", "B. 12", "C. 8", "D. 6"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Amendment Act curtailed the Fundamental Right to Property?",
+      "options": ["A. 24th Amendment", "B. 44th Amendment", "C. 42nd Amendment", "D. 52nd Amendment"],
+      "answer": "B"
+    },
+    {
+      "question": "Which schedule of the Constitution relates to the allocation of seats in the Rajya Sabha?",
+      "options": ["A. First Schedule", "B. Third Schedule", "C. Fourth Schedule", "D. Fifth Schedule"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Amendment lowered the voting age from 21 to 18?",
+      "options": ["A. 42nd Amendment", "B. 44th Amendment", "C. 61st Amendment", "D. 73rd Amendment"],
+      "answer": "C"
+    },
+    {
+      "question": "The 73rd Amendment is related to:",
+      "options": ["A. Anti-defection law", "B. Panchayati Raj", "C. Right to property", "D. Constitutional emergency"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Amendment established the National Judicial Appointments Commission?",
+      "options": ["A. 91st Amendment", "B. 99th Amendment", "C. 101st Amendment", "D. 103rd Amendment"],
+      "answer": "B"
+    },
+    {
+      "question": "The Seventh Schedule deals with:",
+      "options": ["A. Languages", "B. Union, State, and Concurrent Lists", "C. Anti-defection", "D. Panchayati Raj"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Amendment added the words 'Socialist' and 'Secular' to the Preamble?",
+      "options": ["A. 40th Amendment", "B. 42nd Amendment", "C. 44th Amendment", "D. 46th Amendment"],
+      "answer": "B"
+    },
+    {
+      "question": "How many languages are listed in the Eighth Schedule of the Constitution?",
+      "options": ["A. 18", "B. 21", "C. 22", "D. 23"],
+      "answer": "C"
+    },
+    {
+      "question": "Which schedule contains forms of oaths or affirmations?",
+      "options": ["A. First Schedule", "B. Second Schedule", "C. Third Schedule", "D. Fourth Schedule"],
+      "answer": "C"
+    }
+  ],
+  "State_Government_and_Legislature": [
+    {
+      "question": "What is the maximum number of members allowed in a State Legislative Assembly?",
+      "options": ["A. 400", "B. 450", "C. 500", "D. 550"],
+      "answer": "C"
+    },
+    {
+      "question": "Who appoints the Chief Minister of a state?",
+      "options": ["A. Prime Minister", "B. President", "C. Governor", "D. Speaker of the Assembly"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article outlines the powers and functions of the Governor?",
+      "options": ["A. Article 155", "B. Article 161", "C. Article 163", "D. Article 166"],
+      "answer": "C"
+    },
+    {
+      "question": "Who decides the salaries and allowances of the State Legislature members?",
+      "options": ["A. Parliament", "B. State Governor", "C. State Legislature", "D. Finance Commission"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the minimum age to become a member of a State Legislative Assembly?",
+      "options": ["A. 21 years", "B. 25 years", "C. 30 years", "D. 35 years"],
+      "answer": "B"
+    },
+    {
+      "question": "The maximum strength of a State Legislative Council should not exceed:",
+      "options": ["A. One-third of the Legislative Assembly", "B. One-half of the Legislative Assembly", "C. One-fourth of the Legislative Assembly", "D. One-fifth of the Legislative Assembly"],
+      "answer": "A"
+    },
+    {
+      "question": "Which Article deals with the composition of State Legislative Councils?",
+      "options": ["A. Article 170", "B. Article 171", "C. Article 172", "D. Article 174"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the minimum number of seats a Legislative Assembly must have?",
+      "options": ["A. 30", "B. 40", "C. 50", "D. 60"],
+      "answer": "A"
+    },
+    {
+      "question": "Who has the power to dissolve the State Legislative Assembly?",
+      "options": ["A. Chief Minister", "B. Speaker", "C. Governor", "D. President"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Article provides for the disqualification of members of the State Legislature?",
+      "options": ["A. Article 191", "B. Article 194", "C. Article 198", "D. Article 202"],
+      "answer": "A"
+    },
+    {
+      "question": "Which Article mandates that the Governor must summon the State Legislature at least once every six months?",
+      "options": ["A. Article 171", "B. Article 174", "C. Article 176", "D. Article 178"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article empowers the Governor to promulgate ordinances?",
+      "options": ["A. Article 155", "B. Article 161", "C. Article 200", "D. Article 213"],
+      "answer": "D"
+    },
+    {
+      "question": "Who acts as the presiding officer of a joint sitting of both houses of the State Legislature?",
+      "options": ["A. Governor", "B. Chief Minister", "C. Speaker of the Legislative Assembly", "D. Chairman of the Legislative Council"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the tenure of the members of a State Legislative Assembly?",
+      "options": ["A. 4 years", "B. 5 years", "C. 6 years", "D. Until dissolved"],
+      "answer": "B"
+    },
+    {
+      "question": "Which state does not have a Legislative Council?",
+      "options": ["A. Uttar Pradesh", "B. Bihar", "C. Karnataka", "D. Rajasthan"],
+      "answer": "D"
+    }
+  ],
+  "Emergency_Provisions": [
+    {
+      "question": "What Article allows the President to declare a National Emergency?",
+      "options": ["A. Article 352", "B. Article 356", "C. Article 360", "D. Article 370"],
+      "answer": "A"
+    },
+    {
+      "question": "During a National Emergency, which Fundamental Right is automatically suspended?",
+      "options": ["A. Right to Equality", "B. Right to Freedom", "C. Right to Religion", "D. Right to Life"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Article pertains to President's Rule in a state?",
+      "options": ["A. Article 350", "B. Article 352", "C. Article 356", "D. Article 360"],
+      "answer": "C"
+    }
+  ]
+}

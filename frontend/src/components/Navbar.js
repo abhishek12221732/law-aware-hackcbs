@@ -40,9 +40,9 @@ const Navbar = () => {
         <h1 className="text-2xl font-bold bg-blue">
           <img src={Side} className="h-10 mix-blend-multiply" alt="Logo" />
         </h1>
-        <div className="flex items-center space-x-12">
+        <div className="flex items-center space-x-12 poppins-bold">
           <Link to="/" className="hover:text-[#69b578]">HOME</Link>
-          {/* <Link to="/children" className='hover:text-[#69b578]'>CHILDREN</Link> */}
+          <Link to="/children" className='hover:text-[#69b578]'>CHILDREN</Link>
           <Link to="/learning" className="hover:text-[#69b578]">LEARNING</Link>
           <Link to="/awareness" className="hover:text-[#69b578]">AWARENESS</Link>
           <div

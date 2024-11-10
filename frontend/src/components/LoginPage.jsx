@@ -62,7 +62,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black p-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#F5F5DC] p-4">
       <div className="max-w-md w-full bg-white shadow-lg rounded-lg p-8 space-y-6 mt-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

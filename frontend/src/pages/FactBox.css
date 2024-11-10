@@ -1,0 +1,14 @@
+/* FactBox.css */
+svg path {
+    animation: wave 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50px); /* Adjust for wave motion */
+    }
+  }
+  

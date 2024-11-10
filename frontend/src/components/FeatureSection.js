@@ -24,7 +24,7 @@ const FeaturesSection = () => {
           >
             <div className="flex items-center justify-center h-full  bg-opacity-70 rounded-lg text-dark text-3xl font-bold text-white">
               <Link to='/quiz'>
-              Games
+              Quiz
               </Link>
             </div>
           </div>

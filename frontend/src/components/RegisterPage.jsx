@@ -42,7 +42,7 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black p-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#F5F5DC] p-4">
       <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-6 space-y-4 mt-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

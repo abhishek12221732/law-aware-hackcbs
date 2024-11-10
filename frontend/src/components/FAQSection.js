@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; 
-import line from '../assets/images/line.png';
 
 const faqData = [
   {
@@ -34,11 +32,10 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-8 min-h-screen">
+    <div className="bg-gradient-to-r from-green-50 via-yellow-100 to-lime-200 text-gray-800 py-12 px-6 lg:px-20 min-h-screen">
       {/* Heading */}
-      <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center ">
+      <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
         FAQs
-
       </h2>
 
       {/* FAQ Boxes */}
@@ -46,13 +43,16 @@ const FAQSection = () => {
         {faqData.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-300 rounded-lg shadow p-4 bg-white cursor-pointer transform transition-transform hover:scale-105 hover:shadow-md"
+            className="border border-gray-300 rounded-lg shadow p-4 cursor-pointer transform transition-transform hover:shadow-md"
             onClick={() => toggleFAQ(index)}
-            style={{ padding: '1rem 1.5rem' }} 
+            style={{ 
+              background: 'linear-gradient(to right, #e4f7d4, #f9f9b0, #d5e0a6)', // yellowish-green gradient
+              padding: '1rem 1.5rem',
+            }}
           >
             {/* Question */}
             <div className="flex justify-between items-center">
-              <h3 className="text-lg font-medium text-gray-800">
+              <h3 className="text-lg font-medium text-gray-800 transition-all duration-300 hover:text-green-700">
                 {faq.question}
               </h3>
               <button className="text-gray-500">
@@ -60,10 +60,10 @@ const FAQSection = () => {
               </button>
             </div>
 
-            {/* Answer */}
+            {/* Answer with Pop-up Transition */}
             <div
-              className={`overflow-hidden transition-all duration-500 ${
-                activeIndex === index ? 'max-h-96' : 'max-h-0'
+              className={`overflow-hidden transition-all duration-500 transform ${
+                activeIndex === index ? 'max-h-96 translate-y-0 opacity-100' : 'max-h-0 -translate-y-10 opacity-0'
               }`}
             >
               <p className="mt-3 text-gray-600">{faq.answer}</p>
@@ -71,16 +71,6 @@ const FAQSection = () => {
           </div>
         ))}
       </div>
-
-      {/* More FAQ Button */}
-      <div className="mt-8 flex justify-center">
-        <Link to="/faq-page">
-          <button className="bg-blue-600 text-white py-2 px-6 rounded-lg shadow-md hover:bg-blue-700">
-            More FAQs
-          </button>
-        </Link>
-      </div>
-      
     </div>
   );
 };
