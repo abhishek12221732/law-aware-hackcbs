@@ -8,7 +8,8 @@ import { base_url } from '../constants/contants';
 const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const navigate = useNavigate(); 
+  const [isLoggedIn, setIsLoggedIn] = useState(!!Cookies.get('token')); // Check login status on load
+  const navigate = useNavigate();
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -17,18 +18,40 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // Check if token is set, to update isLoggedIn state
+    const token = Cookies.get('token');
+    if (token !== undefined && !isLoggedIn) {
+      setIsLoggedIn(true);
+    }
+    
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, isLoggedIn]);
 
   const handleProfileClick = () => {
-    const isLoggedIn = !!Cookies.get('token'); 
     if (isLoggedIn) {
-      navigate('/profile'); 
+      navigate('/profile');
     } else {
-      navigate('/login'); 
+      navigate('/login');
+    }
+  };
+
+  const handleLogout = async () => {
+    try {
+      // Send logout request to backend
+      await fetch(`${base_url}/logout`, {
+        method: 'POST',
+        credentials: 'include', // Ensure the cookies are included
+      });
+      
+      // Clear the token and update login status
+      Cookies.remove('token');
+      setIsLoggedIn(false);
+      navigate('/login'); // Redirect to login page
+    } catch (error) {
+      console.error("Logout failed:", error);
     }
   };
 
@@ -45,16 +68,19 @@ const Navbar = () => {
           <Link to="/children" className='hover:text-[#69b578]'>CHILDREN</Link>
           <Link to="/learning" className="hover:text-[#69b578]">LEARNING</Link>
           <Link to="/awareness" className="hover:text-[#69b578]">AWARENESS</Link>
-          <div
-            className="flex items-center cursor-pointer w-8 h-8 rounded-full overflow-hidden bg-[#2e4bc1] hover:opacity-90 transition-opacity"
-            onClick={handleProfileClick}
-          >
-            <img
-              src={UserIcon}
-              alt="User Icon"
-              className="w-full h-full mix-blend-multiply"
-            />
+          
+          {/* Profile/Login Button */}
+          <div className="flex items-center cursor-pointer w-8 h-8 rounded-full overflow-hidden bg-[#2e4bc1] hover:opacity-90 transition-opacity"
+            onClick={handleProfileClick}>
+            <img src={UserIcon} alt="User Icon" className="w-full h-full mix-blend-multiply" />
           </div>
+
+          {/* Logout Button */}
+          {isLoggedIn && (
+            <button onClick={handleLogout} className="hover:text-[#69b578]">
+              LOGOUT
+            </button>
+          )}
         </div>
       </nav>
     </header>

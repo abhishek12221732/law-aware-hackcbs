@@ -97,6 +97,13 @@ class Server {
     this.app.use('/api/quizzes', quizRoutes);
     this.app.use("/api/v1", chatRoute);
 
+    // Handle user logout (POST)
+    this.app.post('/api/logout', (req, res) => {
+      // Assuming you store the token in cookies or in some session
+      res.clearCookie('token'); // Clears the 'token' cookie
+      res.status(200).json({ message: 'Logged out successfully' });
+    });
+
     // Health check endpoint
     this.app.get('/health', (req, res) => {
       res.status(200).json({

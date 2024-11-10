@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { base_url } from '../constants/contants';
 import { useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 
 const UserProfilePage = () => {
   const [userProfile, setUserProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
+  // Fetch user profile when component mounts
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
@@ -23,12 +25,22 @@ const UserProfilePage = () => {
     fetchUserProfile();
   }, []);
 
+  // Logout function
   const handleLogout = async () => {
     try {
-      await axios.post(`${base_url}/api/user/logout`, {}, { withCredentials: true });
-      navigate('/login'); // Redirect to login page after logout
+      // Make a POST request to the correct logout endpoint
+      await axios.post(`${base_url}/api/logout`, {}, {
+        headers: {
+          Authorization: `Bearer ${Cookies.get('token')}`,  // Retrieve the token from the cookie
+        },
+        withCredentials: true, // Ensure the cookie is sent with the request
+      });
+  
+      // Clear the token from the cookies after logout
+      Cookies.remove('token');  // Remove the token cookie
+      navigate('/login');       // Redirect the user to the login page
     } catch (error) {
-      console.error('Error during logout:', error);
+      console.error('Logout failed', error);
     }
   };
 
