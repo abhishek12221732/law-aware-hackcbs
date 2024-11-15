@@ -52,10 +52,9 @@ class DatabaseConnection {
 class Server {
   constructor() {
     this.app = express();
-    this.frontendPort = process.env.F_PORT || 3000;
     this.serverPort = process.env.PORT || 3000;
     this.dirname = path.resolve();
-    
+
     this.setupMiddleware();
     this.setupRoutes();
     this.setupErrorHandling();
@@ -67,22 +66,29 @@ class Server {
   setupMiddleware() {
     // Configure CORS
     const corsOptions = {
-      origin: `http://localhost:${this.frontendPort}`,
+      origin: ['https://abhishek12221732.github.io', 'http://localhost:3000'], // Add localhost for testing
       credentials: true,
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-      allowedHeaders: ['Content-Type', 'Authorization']
+      allowedHeaders: ['Content-Type', 'Authorization'],
     };
     this.app.use(cors(corsOptions));
 
     // Parse cookies and JSON bodies
     this.app.use(cookieParser());
-    this.app.use(bodyParser.json({
-      limit: '50mb'
-    }));
-    this.app.use(bodyParser.urlencoded({
-      extended: true,
-      limit: '50mb'
-    }));
+    this.app.use(
+      bodyParser.json({
+        limit: '50mb',
+      })
+    );
+    this.app.use(
+      bodyParser.urlencoded({
+        extended: true,
+        limit: '50mb',
+      })
+    );
+
+    // Serve static files if React is built in the same project
+    this.app.use(express.static(path.join(this.dirname, 'frontend', 'build')));
   }
 
   /**
@@ -95,11 +101,10 @@ class Server {
     this.app.use('/api/news', newsRoutes);
     this.app.use('/api/article', articleRoutes);
     this.app.use('/api/quizzes', quizRoutes);
-    this.app.use("/api/v1", chatRoute);
+    this.app.use('/api/v1', chatRoute);
 
     // Handle user logout (POST)
     this.app.post('/api/logout', (req, res) => {
-      // Assuming you store the token in cookies or in some session
       res.clearCookie('token'); // Clears the 'token' cookie
       res.status(200).json({ message: 'Logged out successfully' });
     });
@@ -108,16 +113,13 @@ class Server {
     this.app.get('/health', (req, res) => {
       res.status(200).json({
         status: 'healthy',
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
     });
 
-    // Handle 404 errors
-    this.app.use('*', (req, res) => {
-      res.status(404).json({
-        success: false,
-        message: 'Resource not found'
-      });
+    // Serve React frontend for all other routes
+    this.app.get('*', (req, res) => {
+      res.sendFile(path.join(this.dirname, 'frontend', 'build', 'index.html'));
     });
   }
 
@@ -134,9 +136,9 @@ class Server {
       // Send error response
       res.status(statusCode).json({
         success: false,
-        statusCode: statusCode,
+        statusCode,
         message: err.message || 'An unexpected error occurred. Please try again later.',
-        stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
+        stack: process.env.NODE_ENV === 'development' ? err.stack : undefined,
       });
     });
   }
@@ -177,7 +179,6 @@ async function startApplication() {
       console.error('Unhandled Rejection at:', promise, 'reason:', reason);
       process.exit(1);
     });
-
   } catch (error) {
     console.error('Failed to start application:', error);
     process.exit(1);
