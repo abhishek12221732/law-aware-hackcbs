@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/law-aware-hackcbs/static/css/main.4ebc71f0.css",
-    "main.js": "/law-aware-hackcbs/static/js/main.228afffc.js",
+    "main.css": "/law-aware-hackcbs/static/css/main.ea170a53.css",
+    "main.js": "/law-aware-hackcbs/static/js/main.1a8b0b3e.js",
     "static/js/453.12d70b94.chunk.js": "/law-aware-hackcbs/static/js/453.12d70b94.chunk.js",
     "static/media/doc.pdf": "/law-aware-hackcbs/static/media/doc.aeacb208c1d1633b24da.pdf",
+    "static/media/doc1.pdf": "/law-aware-hackcbs/static/media/doc1.5f503ba15bc37ac9bc7a.pdf",
     "static/media/rightToEducation.mp4": "/law-aware-hackcbs/static/media/rightToEducation.377e03065096ad7b453d.mp4",
     "static/media/rightToIdentity.mp4": "/law-aware-hackcbs/static/media/rightToIdentity.f66235a11564e1f9c644.mp4",
     "static/media/abuse.mp4": "/law-aware-hackcbs/static/media/abuse.6fd4605e5437f3e7201a.mp4",
     "static/media/lady.png": "/law-aware-hackcbs/static/media/lady.ad26e3774b5237c02899.png",
     "static/media/justicelady.png": "/law-aware-hackcbs/static/media/justicelady.e1b86c61450fec59b7cf.png",
-    "static/media/sidelogo.png": "/law-aware-hackcbs/static/media/sidelogo.8abbe0e91725dafff0a7.png",
     "static/media/hero-background.png": "/law-aware-hackcbs/static/media/hero-background.29e79a59e490bdca9fe7.png",
     "static/media/card3.png": "/law-aware-hackcbs/static/media/card3.e186177e0406f1361ba9.png",
     "static/media/s01.jpeg": "/law-aware-hackcbs/static/media/s01.2da8495a2cbb6fd5224e.jpeg",
@@ -17,6 +17,7 @@
     "static/media/card1.png": "/law-aware-hackcbs/static/media/card1.20eeb58b812c21032dde.png",
     "static/media/image7.png": "/law-aware-hackcbs/static/media/image7.6ee364d7818b16bcae2a.png",
     "static/media/police.jpeg": "/law-aware-hackcbs/static/media/police.345e9bcb570b62fab8e6.jpeg",
+    "static/media/sidelogo.png": "/law-aware-hackcbs/static/media/sidelogo.3a6841f63207e1216283.png",
     "static/media/card2.png": "/law-aware-hackcbs/static/media/card2.c33a490ff756abf107ac.png",
     "static/media/image10.png": "/law-aware-hackcbs/static/media/image10.a6daea37397325d357f4.png",
     "static/media/image9.png": "/law-aware-hackcbs/static/media/image9.c7c1b3a9f201914166b8.png",
@@ -45,12 +46,12 @@
     "static/media/image23.jpeg": "/law-aware-hackcbs/static/media/image23.d252ea424bd2bce95954.jpeg",
     "static/media/image16.jpeg": "/law-aware-hackcbs/static/media/image16.0f038d841f0733516953.jpeg",
     "index.html": "/law-aware-hackcbs/index.html",
-    "main.4ebc71f0.css.map": "/law-aware-hackcbs/static/css/main.4ebc71f0.css.map",
-    "main.228afffc.js.map": "/law-aware-hackcbs/static/js/main.228afffc.js.map",
+    "main.ea170a53.css.map": "/law-aware-hackcbs/static/css/main.ea170a53.css.map",
+    "main.1a8b0b3e.js.map": "/law-aware-hackcbs/static/js/main.1a8b0b3e.js.map",
     "453.12d70b94.chunk.js.map": "/law-aware-hackcbs/static/js/453.12d70b94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ebc71f0.css",
-    "static/js/main.228afffc.js"
+    "static/css/main.ea170a53.css",
+    "static/js/main.1a8b0b3e.js"
   ]
 }
