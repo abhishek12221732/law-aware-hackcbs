@@ -66,7 +66,7 @@ class Server {
   setupMiddleware() {
     // Configure CORS
     const corsOptions = {
-      origin: ['https://abhishek12221732.github.io', 'http://localhost:3000'], // Add localhost for testing
+      origin: ['https://abhishek12221732.github.io', 'http://localhost:3000', 'https://law-aware.onrender.com/'], // Add localhost for testing
       credentials: true,
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization'],
