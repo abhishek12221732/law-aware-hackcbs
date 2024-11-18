@@ -36,7 +36,7 @@ function App() {
     <Router >
       <Navbar />
       <Routes>
-        <Route path="/" element={<div>It works!</div>} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/awareness" element={<AwarenessPage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/games" element={<GamesPage />} />
