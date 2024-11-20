@@ -12,7 +12,7 @@ const NewsSection = () => {
   const fetchNews = async () => {
     try {
       const response = await axios.get(
-        `http://api.mediastack.com/v1/news?access_key=148a35feda6f9e00820781a6a81a9856&countries=in&languages=en`
+        `https://api.mediastack.com/v1/news?access_key=148a35feda6f9e00820781a6a81a9856&countries=in&languages=en`
       );
       const filteredNews = response.data.data.filter((article) => article.image); // Filters for articles with images
       setNews(filteredNews);
