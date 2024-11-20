@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './Chatbot.css';
 
-const API_URL = "http://localhost:3002/api/v1/chat";
+const API_URL = "https://law-aware.onrender.com/api/v1/chat";
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
